@@ -1,0 +1,65 @@
+Perfect! Let’s begin your **Google-level DSA Mastery Plan – Pattern-by-Pattern**, where for **each DSA pattern**, I will:
+
+> 🔹 Explain the core concept
+> 🔹 Cover all **Leetcode Medium & Hard** problems that are important (especially Google-tagged)
+> 🔹 Provide intuition + sample approach
+> 🔹 Include tips, edge cases, and optimization logic
+> 🔹 Help you build pattern recognition and mastery through structured learning
+
+---
+
+## ✅ Pattern 1: **Sliding Window** (Start here)
+
+### 🔍 Concept:
+
+Sliding Window is used for problems involving **contiguous subarrays/substrings**. You maintain a window and slide it across the array/string while maintaining the **state (sum/frequency/count)**.
+
+### 🔧 Types of Sliding Windows:
+
+* Fixed-size window (length k)
+* Variable-size window (until condition breaks)
+* Window with character/element frequency tracking (for strings or complex constraints)
+
+---
+
+### 🧠 Core Template (Variable Size):
+
+```cpp
+int left = 0;
+for (int right = 0; right < n; right++) {
+    // include arr[right] in the window
+    
+    while (window is invalid) {
+        // remove arr[left] from window
+        left++;
+    }
+
+    // update result if needed
+}
+```
+
+---
+
+### 📚 Must-Do Leetcode Medium/Hard Problems for Sliding Window:
+
+| #  | Problem                                                                                                                                 | Type   | Tags                            |
+| -- | --------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------------------------- |
+| 1  | [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)      | Medium | Variable-size window            |
+| 2  | [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/)                                                      | Medium | Fixed-size window + freq map    |
+| 3  | [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)                                                 | Hard   | Min substring + char frequency  |
+| 4  | [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)                                      | Medium | Fixed-size window               |
+| 5  | [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)                                                    | Hard   | Deque + Monotonic Queue         |
+| 6  | [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                                              | Medium | Variable-size window            |
+| 7  | [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)                                               | Medium | At most k zeroes                |
+| 8  | [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)                                        | Medium | Product constraint              |
+| 9  | [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)                  | Medium | Char replacement within window  |
+| 10 | [1208. Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget/)                           | Medium | Cost difference array           |
+| 11 | [1423. Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/)               | Medium | Sliding window from ends        |
+| 12 | [1456. Maximum Number of Vowels in a Substring](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium | Fixed window, char count        |
+| 13 | [1658. Minimum Operations to Reduce X to Zero](https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/)                   | Medium | Trick with sum – sliding window |
+
+---
+
+
+
+
